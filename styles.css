@@ -1,0 +1,50 @@
+:root {
+    /* couleur de la miage */
+    --bleu-miage: #2b727e;
+    --header-height: 5rem;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: var(--bleu-miage);
+    color: white;
+    position: fixed;
+}
+
+.header-top {
+    height: var(--header-height);
+}
+
+.header-bottom {
+    max-height: 10rem;
+    margin: 1rem;
+    margin-top: 0;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+#header-checkbox:checked + .header-bottom {
+    max-height: 0px;
+    margin: 0 1rem;
+}
+
+.header-logo {
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+img {
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+label {
+    cursor: pointer;
+}
+
+.main-container {
+    padding-top: calc(1rem + var(--header-height));
+}
